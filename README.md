@@ -2,7 +2,7 @@
 **Platform:** OverTheWire (Bandit) / Machine or virtual machine with a Linux OS
 **Goal:** Breaking out of a restricted shell (`more` => `vim`).
 ### Overview
-![1](Pasted image 20260301174331.png)
+![1](Pasted_image_20260301174331.png)
 At this level, the user “bandit26” has a custom restricted shell. Instead of a standard Bash prompt, the system runs a script that displays a text file and logs the user out. You must find a way to bypass the logout and find the key to the next level.
 ### The Goal
 The user's shell was set to “/usr/bin/showtext,” which runs “more” on a file. SSH attempts would display the text and terminate the connection, preventing commands from being entered.
