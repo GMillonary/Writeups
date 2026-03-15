@@ -14,13 +14,13 @@
 
 ### Initial Discovery
 This lab shows us the logical map of a basic network and simulates traffic from multiple hosts to a server. Some of these packets are malicious and can compromise the server.
-IMAGEEEEENNN
+![1](ImageNet1.png)
 First, the packet traffic to the server must be logged by the intermediate device. From this point on, you can already see the bad packets, but you still need to analyze why they are bad.
-IMAGEEEENNNN
+![2](ImageNet2.png)
 ### Traffic Flow & Investigation
 - **Source IP / Suspects:** `[10.10.99.99] & [10.10.99.62]`
 - **Destination IP / Target:** `[10.10.99.199]`
-IMAGEEEEEEN
+![3](ImageNet3.png)
 The IDS/IPS system shows that the host with IP address 10.10.99.99 is making multiple attempts to access the system and/or trying to use Metasploit. Additionally, the host with IP address 10.10.99.62 is generating a high volume of traffic.
 Referring to the same table, three suspicious ports are visible: 2222, 4444, and 7777.
 ### The Incident / Attack Payload
